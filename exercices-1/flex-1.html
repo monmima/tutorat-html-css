@@ -6,22 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma super page flex</title>
     <style>
+        body {
+            height: 95vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
         footer, header, main {
             border: 2px solid black;
             margin: 5px;
             padding: 5px;
         }
 
-        .gras {
-            font-weight: bolder;
-            font-size: 2em;
+        header {
+            display: flex;
+            justify-content: space-around;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/250px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png">
-        <p class="gras">Ma super page flex</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png/250px-Baldurs_Gate_stacked_logo_circa_Enhanced_Edition.png" alt="Logo de Baldur's Gate">
+        <h1>Ma super page flex</h1>
     </header>
 
     <main>
@@ -35,8 +43,12 @@
     </main>
 
     <footer>
-        <p>Voici un super footer.</p>
-        <p>© 2021 Librairie Libratus | Site web réalisé par Les HTML du Web</p>
+        <p>Voici un super pied de page.</p>
+        <p>
+            <small>
+                © <time datetime="2021-05-21">16 mai 2021</time> <strong>Librairie Libratus</strong> | Site web réalisé par <em>Les <abbr title="hypertext mark-up language">HTML</abbr> du Web</em>
+            </small>
+        </p>
     </footer>
 </body>
 </html>
